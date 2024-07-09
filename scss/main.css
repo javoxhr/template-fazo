@@ -212,6 +212,7 @@ body {
   gap: 4px;
   border: none;
   background: none;
+  color: #000;
 }
 
 .header-category .container {
