@@ -259,9 +259,12 @@
 
 .hero {
     padding: 35px 0;
-    position: relative;
+    .container {
+        position: relative;
+    }
     &__img {
         width: 100%;
+        position: relative;
     }
     &__swiper-btn {
         button {
@@ -271,12 +274,12 @@
             transition: all .1s ease;
             position: absolute;
             &:nth-child(1) {
-                top: 170px;
-                left: 55px;
+                top: 140px;
+                left: 0;
             }
             &:nth-child(2) {
-                top: 170px;
-                right: 55px;
+                top: 140px;
+                right: 0;
             }
             &:hover {
                 opacity: 0.9;
