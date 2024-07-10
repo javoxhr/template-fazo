@@ -2,12 +2,14 @@
     background: #F7F7F7;
     margin-top: 66px;
     padding: 80px 0 70px;
+    position: relative;
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 129px;
         margin-left: -80px;
+        position: relative;
     }
     &__text-wrapper {
         h1 {
@@ -49,10 +51,34 @@
             border-radius: 5px;
         }
     }
+    &__swip {
+        position: relative;
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            position: absolute;
+            &:first-child{
+                left: -35px;
+                top: -140px;
+            }
+            &:last-child {
+                top: -140px;
+                right: 0;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1290px) {
     .sale {
+        &__swip {
+            button {
+                &:first-child {
+                    left: 0;
+                }
+            }
+        }
         &__wrapper {
             gap: 50px;
             margin-left: 0;
@@ -79,6 +105,16 @@
 
 @media screen and (max-width: 1097px) {
     .sale {
+        &__swip {
+            button {
+                &:first-child {
+                    top: -300px;
+                }
+                &:last-child {
+                    top: -300px;
+                }
+            }
+        }
         &__wrapper {
             flex-direction: column;
             text-align: center;
@@ -132,6 +168,18 @@
                 padding: 12px 51px;
                 font-size: 14px;
                 margin-top: 18px;
+            }
+        }
+        &__swip {
+            button {
+                &:first-child {
+                    left: 0;
+                    top: -230px;
+                }
+                &:last-child {
+                    right: 0;
+                    top: -230px;
+                }
             }
         }
     }

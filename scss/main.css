@@ -751,6 +751,9 @@ body {
   }
 }
 @media screen and (max-width: 546px) {
+  .popular__title {
+    font-size: 14px;
+  }
   .popular__cards-wrapper {
     grid-template-columns: repeat(4, 1fr);
     overflow-y: hidden;
@@ -777,6 +780,7 @@ body {
   background: #F7F7F7;
   margin-top: 66px;
   padding: 80px 0 70px;
+  position: relative;
 }
 .sale__wrapper {
   display: flex;
@@ -784,6 +788,7 @@ body {
   justify-content: center;
   gap: 129px;
   margin-left: -80px;
+  position: relative;
 }
 .sale__text-wrapper h1 {
   font-weight: 500;
@@ -821,8 +826,28 @@ body {
   color: #ED3729;
   border-radius: 5px;
 }
+.sale__swip {
+  position: relative;
+}
+.sale__swip button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+}
+.sale__swip button:first-child {
+  left: -35px;
+  top: -140px;
+}
+.sale__swip button:last-child {
+  top: -140px;
+  right: 0;
+}
 
 @media screen and (max-width: 1290px) {
+  .sale__swip button:first-child {
+    left: 0;
+  }
   .sale__wrapper {
     gap: 50px;
     margin-left: 0;
@@ -842,6 +867,12 @@ body {
   }
 }
 @media screen and (max-width: 1097px) {
+  .sale__swip button:first-child {
+    top: -300px;
+  }
+  .sale__swip button:last-child {
+    top: -300px;
+  }
   .sale__wrapper {
     flex-direction: column;
     text-align: center;
@@ -885,10 +916,58 @@ body {
     font-size: 14px;
     margin-top: 18px;
   }
+  .sale__swip button:first-child {
+    left: 0;
+    top: -230px;
+  }
+  .sale__swip button:last-child {
+    right: 0;
+    top: -230px;
+  }
 }
 @media screen and (max-width: 450px) {
   .sale {
     margin-top: 0;
     padding: 30px 0;
+  }
+}
+.cheaper {
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+.cheaper__text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cheaper__text-wrapper h1 {
+  width: 204px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+}
+.cheaper__text-wrapper a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #909090;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .cheaper {
+    margin-top: 30px;
+  }
+  .cheaper__text-wrapper {
+    align-items: center;
+  }
+  .cheaper__text-wrapper h1 {
+    width: 100%;
+    font-size: 14px;
+  }
+  .cheaper__text-wrapper a {
+    width: 250px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
