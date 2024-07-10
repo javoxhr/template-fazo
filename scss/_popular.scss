@@ -11,7 +11,7 @@
         gap: 25px;
         padding: 35px 0 50px;
         &__card {
-            height: 125px;
+            height: 115px;
             border: 1px solid #F2F2F2;
             padding: 20px 10px 20px 12px;
             border-radius: 5px;
@@ -22,10 +22,10 @@
                 padding-right: 100px;
             }
             img {
-                width: 126px;
-                height: 120px;
+                width: 136px;
+                height: 130px;
                 position: absolute;
-                top: -13px;
+                top: -8px;
                 right: 0;
             }
         }
@@ -38,6 +38,10 @@
             &__card {
                 &__title {
                     font-size: 16px;
+                }
+                img {
+                    width: 126px;
+                    height: 120px;
                 }
             }
         }
@@ -85,6 +89,9 @@
                 &__title {
                     font-weight: 500;
                     font-size: 16px;
+                }
+                img {
+                    top: -12px;
                 }
             }
         }
