@@ -401,7 +401,7 @@ body {
   .header-bottom__search__input {
     padding: 7px 2px;
   }
-  .header-bottom__search__input:focus {
+  .header-bottom__search__input input:focus {
     display: none;
   }
   .header-bottom__search__btn button {
