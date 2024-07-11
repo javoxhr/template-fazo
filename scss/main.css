@@ -706,11 +706,11 @@ body {
   }
   .offers__text-wrapper h1 {
     width: 160px;
-    font-size: 12px;
+    font-size: 11px;
   }
   .offers__text-wrapper a {
     width: 130px;
-    font-size: 11px;
+    font-size: 10px;
     color: #909090;
   }
   .offers__cards-wrapper__card {
