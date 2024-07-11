@@ -706,12 +706,12 @@ body {
   }
   .offers__text-wrapper h1 {
     width: 150px;
-    font-size: 12px;
+    font-size: 11px;
   }
   .offers__text-wrapper a {
     width: 130px;
     font-size: 11px;
-    color: blue;
+    color: red;
   }
   .offers__cards-wrapper__card {
     padding: 0 0 8px;
