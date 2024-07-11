@@ -24,13 +24,14 @@
     &__cards-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
         gap: 35px;
         margin-top: 40px;
         padding-bottom: 20px;
         &__card {
             background: #fff;
             border: 1px solid #F2F2F2;
-            padding: 16px 16px 10px;
+            padding: 20px 10px 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -57,7 +58,7 @@
                 gap: 10px;
                 .before-price {
                     font-weight: 400;
-                    font-size: 14px;
+                    font-size: 12px;
                     text-decoration: line-through;
                     color: #9e9d9d;
                 }
@@ -69,12 +70,11 @@
                 }
                 .sale-price {
                     font-weight: 600;
-                    font-size: 18px;
+                    font-size: 16px;
                     color: #ED3729;
                 }
             }
             &__title {
-                width: 234px;
                 font-weight: 700;
                 font-size: 16px;
                 color: $title-color;
@@ -84,7 +84,7 @@
             }
             &__info {
                 font-weight: 400;
-                font-size: 14px;
+                font-size: 13px;
                 color: $info-color;
             }
             &__time {
@@ -209,6 +209,36 @@
                 display: block;
                 position: absolute;
                 bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1610px) {
+    .offers {
+        &__cards-wrapper {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1287px) {
+    .offers {
+        &__cards-wrapper {
+            grid-template-columns: repeat(4, 1fr);
+            &__card {
+                &__info {
+                    font-size: 14px;
+                }
+                &__price-wrap {
+                    .sale-price {
+                        font-size: 18px;
+                    }
+                    .sal-before {
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
