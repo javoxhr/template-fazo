@@ -709,8 +709,9 @@ body {
     font-size: 12px;
   }
   .offers__text-wrapper a {
-    width: 150px;
+    width: 140px;
     font-size: 11px;
+    color: red;
   }
   .offers__cards-wrapper__card {
     padding: 0 0 8px;
