@@ -473,6 +473,7 @@ body {
   padding-bottom: 20px;
 }
 .offers__cards-wrapper__card {
+  background: #fff;
   border: 1px solid #F2F2F2;
   padding: 16px 16px 10px;
   display: flex;
@@ -969,5 +970,125 @@ body {
   .cheaper__text-wrapper a {
     width: 250px;
     font-size: 12px;
+  }
+}
+.werecommend__text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.werecommend__text-wrapper h1 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #202020;
+}
+.werecommend__text-wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #909090;
+}
+.werecommend__liquidation {
+  display: flex;
+  gap: 30px;
+}
+.werecommend__liquidation .liq {
+  margin-top: 40px;
+}
+.werecommend__liquidation .liq a img {
+  width: 400px;
+  height: 835px;
+}
+.werecommend__cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1300px) {
+  .werecommend__cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1111px) {
+  .werecommend__liquidation {
+    flex-direction: column;
+  }
+  .werecommend__liquidation .liq {
+    display: none;
+  }
+}
+@media screen and (max-width: 618px) {
+  .werecommend {
+    display: none;
+  }
+}
+.breand {
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+.breand__text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.breand__text-wrapper h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #202020;
+}
+.breand__text-wrapper .breand-btns-wrap button {
+  border: none;
+  background: none;
+}
+.breand__cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.breand__cards-wrapper__card {
+  width: 250px;
+  height: 110px;
+  border: 2px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1290px) {
+  .breand__cards-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .breand {
+    margin-top: 10px;
+  }
+  .breand__text-wrapper h1 {
+    font-size: 14px;
+  }
+  .breand__cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  .breand__cards-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .breand__cards-wrapper__card {
+    width: 182px;
+    height: 78px;
+  }
+  .breand__cards-wrapper__card img {
+    width: 83px;
   }
 }/*# sourceMappingURL=main.css.map */
