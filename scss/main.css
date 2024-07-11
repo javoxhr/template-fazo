@@ -400,6 +400,7 @@ body {
   }
   .header-bottom__search__input {
     padding: 7px 2px;
+    flex: 1;
   }
   .header-bottom__search__btn button {
     padding: 7px 16px;
