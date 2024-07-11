@@ -403,7 +403,7 @@ body {
   }
   .header-bottom__search__btn button {
     padding: 7px 16px;
-    border: 1px solid #ED3729;
+    border: 0.5px solid #ED3729;
   }
 }
 @media screen and (max-width: 573px) {
