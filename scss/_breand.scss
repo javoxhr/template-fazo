@@ -1,6 +1,6 @@
 .breand {
     margin-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     &__text-wrapper {
         display: flex;
         align-items: center;
@@ -51,6 +51,7 @@
 @media screen and (max-width: 500px) {
     .breand {
         margin-top: 10px;
+        padding-bottom: 40px;
         &__text-wrapper {
             h1 {
                 font-size: 14px;
