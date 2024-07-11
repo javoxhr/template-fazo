@@ -709,6 +709,7 @@ body {
     font-size: 12px;
   }
   .offers__text-wrapper a {
+    width: 130px;
     font-size: 11px;
   }
   .offers__cards-wrapper__card {
