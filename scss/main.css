@@ -401,8 +401,8 @@ body {
   .header-bottom__search__input {
     padding: 7px 2px;
   }
-  .header-bottom__search__input input:focus {
-    display: none;
+  .header-bottom__search__input input {
+    flex: 1;
   }
   .header-bottom__search__btn button {
     padding: 7px 16px;

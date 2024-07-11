@@ -430,9 +430,7 @@
             &__input {
                 padding: 7px 2px;
                 input {
-                    &:focus {
-                        display: none;
-                    }
+                    flex: 1;
                 }
             }
             &__btn {
