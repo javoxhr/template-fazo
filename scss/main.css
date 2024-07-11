@@ -705,7 +705,8 @@ body {
     margin-top: 25px;
   }
   .offers__text-wrapper h1 {
-    font-size: 13px;
+    width: 180px;
+    font-size: 12px;
   }
   .offers__text-wrapper a {
     font-size: 11px;
