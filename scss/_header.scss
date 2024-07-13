@@ -1,5 +1,6 @@
 .header-top {
     background: #ED3729;
+    position: relative;
     .container {
         display: flex;
         align-items: center;
@@ -198,6 +199,7 @@
 }
 
 .header-category {
+    position: relative;
     .container {
         display: flex;
         align-items: center;
@@ -241,6 +243,87 @@
                     }
                 }
             }
+        }
+    }
+    .category-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.20);
+        z-index: 10;
+    }
+    .open-category {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 70px;
+        width: 100%;
+        background: #fff;
+        border-top: 1px solid #F2F2F2;
+        padding: 35px 0 80px;
+        &__banner {
+            a {
+                img {
+                    width: 550px;
+                    height: 400px;
+                }
+            }
+        }
+        &__wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .container {
+            display: flex;
+            align-items:center;
+            gap: 100px;
+        }
+        &__left {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            &__item {
+                padding: 8px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover {
+                    background: #F2F2F2;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $sub-info-color;
+                    img {
+                        &:last-child {
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .open-category-cet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            h1 {
+                width: 270px;
+                font-weight: 600;
+                font-size: 24px;
+                margin-left: -11px;
+            }
+        }
+        .cet-items-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     }
 }
