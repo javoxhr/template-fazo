@@ -1733,6 +1733,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  color: #202020;
 }
 .menu__register {
   display: flex;
@@ -1753,6 +1754,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  color: #202020;
 }
 .menu__register button span {
   width: 40px;
@@ -1775,6 +1777,7 @@ body {
   border-radius: 5px;
   transition: all 0.2s ease;
   cursor: pointer;
+  color: #202020;
 }
 .menu__lang button:hover {
   background: #ED3729;
