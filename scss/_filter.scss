@@ -61,6 +61,7 @@
             width: 100%;
             max-width: 265px;
             margin-top: 10px;
+            accent-color: $pr-color;
         }
         .pick-up {
             margin-top: 20px;
@@ -74,10 +75,13 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                border: 1px solid rgb(9, 80, 232);
+                border: 1px solid $pr-color;
                 border-radius: 5px;
                 padding: 12px 15px;
                 margin-top: 13px;
+                input {
+                    accent-color: $pr-color;
+                }
                 h2 {
                     font-weight: 400;
                     font-size: 16px;
@@ -139,6 +143,9 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
+                input {
+                    accent-color: $pr-color;
+                }
                 h2 {
                     font-weight: 400;
                     font-size: 14px;

@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    z-index: 10;
+    z-index: 21;
     width: 300px;
     height: 100%;
     background: #fff;
@@ -94,4 +94,35 @@
     background: rgba(0, 0, 0, 0.20);
     z-index: 5;
     display: none;
+}
+
+.menu-bottom {
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    background: #fff;
+    box-shadow: 1px 1px 15px #dedcdc;
+    color: rgb(152, 152, 152);
+    padding: 18px 5px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .menu-bottom {
+        display: flex;
+    }
 }

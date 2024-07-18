@@ -83,22 +83,15 @@
         &__category {
             position: relative;
             button {
-                padding: 12px 20px;
-                border: none;
-                background: none;
+                display: none;
             }
             span {
-                color: #9f9c9c;
-                position: absolute;
-                top: 10px;
-                left: 130px;
-                width: 4px;
-                display: block;
+                display: none;
             }
         }
         &__input {
             width: 70%;
-            padding: 10px 0;
+            padding: 10px;
             input {
                 width: 100%;
                 padding: 7px;
@@ -235,8 +228,8 @@
             li {
                 a {
                     color: #000000;
-                    font-weight: 600;
-                    font-size: 15px;
+                    font-weight: 500;
+                    font-size: 14px;
                     transition: all .2s ease;
                     &:hover {
                         color: red;
@@ -552,6 +545,45 @@
     }
     .menu-hero {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        padding: 10px 0;
+    }
+    .header-bottom {
+        &__search {
+            &__input {
+                padding: 12px 0;
+            }
+            &__btn {
+                button {
+                    padding: 11px 15px;
+                }
+            }
+        }
+    }
+    .search-btn-text {
+        font-size: 12px;
+    }
+    .header-category {
+        &__main-btn {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header-category {
+        &__main-btn {
+            display: none;
+        }
+    }
+    .menu-hero {
+        &__img {
+            margin-top: 15px;
+        }
     }
 }
 
